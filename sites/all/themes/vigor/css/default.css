@@ -1,0 +1,358 @@
+/**
+ * @file
+ * About Default Styles
+ * ---------------------
+ * default.css is used to establish general rules, browser reset, or admin user interface styles.
+ *
+ * Browser Reset
+ * -------------
+ * HTML5 Reset
+ */
+a,
+abbr,
+address,
+article,
+aside,
+audio,
+b,
+blockquote,
+body,
+caption,
+cite,
+code,
+dd,
+del,
+dfn,
+dialog,
+div,
+dl,
+dt,
+em,
+fieldset,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+hr,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+p,
+pre,
+q,
+samp,
+section,
+small,
+span,
+strong,
+sub,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+ul,
+var,
+video {
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+/*
+	Makes browsers agree.
+	IE + Opera = font-weight: bold.
+	Gecko + WebKit = font-weight: bolder.
+*/
+b,
+strong {
+  font-weight: bold;
+}
+
+img {
+  font-size: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+th,
+td,
+caption {
+  font-weight: normal;
+  text-align: left;
+  vertical-align: top;
+}
+
+:focus { /* remember to define focus styles! */
+  outline: 0px;
+}
+
+/**
+ * Clear Floats Without Structural Markup
+ * ---------------------------------------
+ * http://www.positioniseverything.net/easyclearing.html
+ */
+.clearfix {
+  display: inline-block;
+}
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+/* Hides from IE-mac \ */
+* html .clearfix {
+  height: 1%;
+}
+.clearfix {
+  display: block;
+}
+
+/* clear classes */
+.clearleft,
+.clearl,
+.cleft {
+  clear: left;
+}
+
+.clearright,
+.clearr,
+.cright {
+  clear: right;
+}
+
+.clear,
+.clearboth,
+.clearall {
+  clear: both;
+}
+
+/* Float classes */
+.floatleft,
+.fleft,
+.floatl {
+  float: left;
+  margin: 0 10px 5px 0;
+}
+
+.floatright,
+.fright,
+.floatr {
+  float: right;
+  margin: 0 0 5px 10px;
+}
+
+/* Skip to Navigation, Main Content link */
+#skip-link {
+  margin: 0;
+}
+#skip-link a,
+#skip-link a:visited {
+  background-color: #666;
+  color: #fff;
+  display: block;
+  padding: 2px 0 3px 0;
+  text-align: center;
+  width: 100%;
+}
+
+/* =Drupal ---------------------------------------------------------------- */
+
+tbody,
+tbody th,
+tr.even,
+tr.odd {
+  border: none;
+}
+
+ul.links li {
+  padding-left: 0;
+}
+
+li.leaf,
+li.expanded,
+li.collapsed {
+  margin: 0;
+  padding: 0;
+}
+
+#autocomplete li {
+  margin: 0;
+}
+
+dd {
+  margin-left: 10px;
+}
+
+#views-ui-analyze-view-button input {
+  margin-top: 10px;
+}
+
+#node-admin-filter ul li,
+#user-admin-filter ul li {
+  list-style: none;
+}
+
+#node-admin-filter dl.multiselect .form-item,
+#user-admin-filter dl.multiselect .form-item {
+  height: 2.5em;
+}
+
+#node-admin-content .container-inline div,
+#user-admin-account .container-inline div {
+  display: block;
+}
+
+#node-admin-content #edit-operation-wrapper,
+#user-admin-account #edit-operation-wrapper {
+  float: left;
+  margin-right: 10px;
+}
+
+#node-admin-content .form-submit,
+#user-filter-form .form-submit,
+#user-admin-account .form-submit {
+  margin: 0;
+}
+
+.hierarchical-select select {
+  height: auto !important;
+}
+
+tr.content-add-new a.tabledrag-handle {
+  display: none;
+}
+
+#views-ui-edit-view-form {
+  margin-bottom: 30px;
+}
+
+form#views-ui-preview-form input#preview-submit {
+  margin: 15px 0 0;
+}
+
+.display-node li,
+#context-ui-form li {
+  list-style: none;
+  list-style-type: none;
+}
+
+#views-ajax-pad fieldset {
+  margin: 10px;
+  padding: 10px;
+}
+
+#book-outline {
+  min-width: 100%;
+}
+
+
+/* Tabs CSS - IE 5 and 6 don't support PNGs with alpha transparency. */
+.ie6 ul.primary,
+.ie6 ul.secondary {
+  width: 100%;
+  width: auto;
+}
+.ie6 ul.primary li a,
+.ie6 ul.primary li a .tab,
+.ie6 ul.secondary li a,
+.ie6 ul.secondary li a .tab {
+  display: inline;
+  display: inline-block;
+}
+
+.ie6 ul.primary li a {
+  background: url(../images/tabs/tab-left-ie6.png) no-repeat left -38px;
+}
+.ie6 ul.primary li a .tab {
+  background: url(../images/tabs/tab-right-ie6.png) no-repeat right -38px;
+}
+.ie6 ul.primary li a:hover {
+  background-position: left -76px;
+  color: #555555;
+  cursor: pointer;
+  text-decoration: none;
+}
+.ie6 ul.primary li a:hover .tab {
+  background-position: right -76px;
+}
+.ie6 ul.primary li.active a,
+.ie6 ul.primary li.active a:hover {
+  background: url(../images/tabs/tab-left-ie6.png) no-repeat left 0;
+}
+.ie6 ul.primary li.active a .tab,
+.ie6 ul.primary li.active a:hover .tab {
+  background: url(../images/tabs/tab-right-ie6.png) no-repeat right 0;
+}
+
+.ie6 ul.secondary li a:hover {
+  color: #555555;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* Minor fix for primary and secondary tabs in IE */
+.ie7 ul .primary li a:hover,
+.ie7 ul .secondary li a:hover {
+  color: #555555;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+
+/* =Core */
+.form-item input.error,
+.form-item textarea.error,
+.form-item select.error {
+  border: 2px solid red;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  div.vertical-tabs .vertical-tabs-panes {
+    margin-top: -1em;
+  }
+  div.vertical-tabs .vertical-tabs-panes .fieldset-wrapper {
+    position: relative;
+    top: 1em;
+  }
+}
+
+/**
+ * =modules
+ */
+.dev-query {
+  color: #cecece;
+}

@@ -1,0 +1,33 @@
+name = Vigor
+description = Vigor's goal is refined to the lightweight styles. It focus on simple and flexible theme starter.
+screenshot = images/screenshot.png
+core = 7.x
+engine = phptemplate
+
+regions[page_top] = Page top
+regions[header] = Header
+regions[preface] = Preface
+regions[sidebar_first] = Left sidebar
+regions[sidebar_second] = Right sidebar
+regions[highlighted] = Highlighted
+regions[help] = Help
+regions[content] = Content
+regions[postscript] = Postscript
+regions[footer] = Footer
+regions[page_bottom] = Page bottom
+
+stylesheets[all][] = css/default.css
+stylesheets[all][] = css/layout.css
+stylesheets[all][] = css/style.css
+stylesheets[print][] = css/print.css
+
+scripts[] = js/theme.js
+             
+settings[vigor_zen_tabs]             = 1
+settings[vigor_breadcrumb]           = yes
+settings[vigor_breadcrumb_separator] = ' » '
+settings[vigor_breadcrumb_home]      = 1
+settings[vigor_breadcrumb_trailing]  = 0
+settings[vigor_breadcrumb_title]     = 0
+settings[formalize_mode] = 1
+settings[clear_registry] = 0

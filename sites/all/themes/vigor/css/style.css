@@ -1,0 +1,768 @@
+/**
+ * @file
+ * Define your own style.
+ */
+
+/**
+ * =Global styles
+ */
+body {
+  background: #3e3a39;
+  color: #333;
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+/* This technique neutralizes font size differences for monotype fonts. */
+html > body,
+html > textarea {
+  font-size: 13px;
+}
+
+hr {
+  border: 0 #ccc solid;
+  border-top-width: 1px;
+  clear: both;
+  height: 0;
+}
+
+/* =Links */
+a:link,
+a:visited {
+  color: #026873;
+  text-decoration: none;
+}
+
+#postscript a:link,
+#postscript a:visited {
+  color: #947222;
+}
+
+a:hover {
+  color: #03adb0;
+  text-decoration: underline;
+}
+
+#postscript a:hover {
+  color: #40310f;
+}
+
+a:active {
+  color: #ff5400;
+  text-decoration: none;
+}
+
+/* =Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #737261;
+}
+h1 {
+  font-size: 26px;
+}
+h2 {
+  font-size: 24px;
+}
+h3 {
+  font-size: 22px;
+}
+h4 {
+  font-size: 20px;
+}
+h5 {
+  font-size: 18px;
+}
+h6 {
+  font-size: 16px;
+}
+
+/* =Paragraph styles. */
+p,
+dl,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+ul,
+pre,
+table,
+address,
+fieldset {
+  margin-bottom: 20px;
+}
+
+/* =List styles. */
+ol {
+  list-style: decimal;
+}
+ul {
+  list-style: disc;
+}
+li {
+  margin-left: 30px;
+}
+.messages ul li,
+.views-admin-links li {
+  margin-left: 0;
+}
+li a.active {
+  color: #444;
+}
+ul {
+  list-style-type: disc;
+}
+ul ul {
+  list-style-type: circle;
+}
+ul ul ul {
+  list-style-type: square;
+}
+ul ul ul ul {
+  list-style-type: circle;
+}
+
+ol {
+  list-style-type: decimal;
+}
+ol ol {
+  list-style-type: lower-alpha;
+}
+ol ol ol {
+  list-style-type: decimal;
+}
+
+/* =Table styles. */
+table {
+  border-collapse: collapse;
+  margin: 1em 0;
+  width: 100%;
+}
+thead th {
+  border-bottom: 2px solid #d3e7f4;
+  color: #494949;
+  font-weight: bold;
+  line-height: 1.65;
+}
+th a:link,
+th a:visited {
+  color: #6f9dbd;
+}
+td,
+th {
+  padding: .3em .5em;
+}
+tr.even,
+tr.odd,
+tbody th {
+  border: solid #d3e7f4;
+  border-width: 1px 0;
+}
+tr.odd,
+tr.info {
+  background-color: #edf5fa;
+}
+tr.even {
+  background-color: #fff;
+}
+tr.drag {
+  background-color: #fffff0;
+}
+tr.drag-previous {
+  background-color: #ffd;
+}
+tr.odd td.active {
+  background-color: #ddecf5;
+}
+tr.even td.active {
+  background-color: #e6f1f7;
+}
+td.region,
+td.module,
+td.container,
+td.category {
+  background-color: #d4e7f3;
+  border-bottom: 1px solid #b4d7f0;
+  border-top: 1.5em solid #fff;
+  color: #455067;
+  font-weight: bold;
+}
+tr:first-child td.region,
+tr:first-child td.module,
+tr:first-child td.container,
+tr:first-child td.category {
+  border-top-width: 0;
+}
+
+/* =Code */
+pre,
+code,
+tt {
+  font: 1em "andale mono", "lucida console", monospace;
+  line-height: 1.5;
+}
+
+pre {
+  background-color: #efefef;
+  border: 1px solid #aaaaaa;
+  display: block;
+  margin: 5px 0 20px;
+  padding: 5px;
+}
+
+/**
+ * =Form
+ * formalize rewrite
+ * source - https://github.com/nathansmith/formalize/
+ * intro - http://sonspring.com/journal/formalize-css
+ */
+input.form-submit,
+a.button {
+  margin-right: .5em;
+}
+
+html.js input.form-autocomplete {
+  background-position: 100% 4px;
+}
+html.js input.throbbing {
+  background-position: 100% -16px; /* LTR */
+}
+
+
+/* =Abbreviation. */
+abbr {
+  border-bottom: 1px dotted #666666;
+  cursor: help;
+  white-space: nowrap;
+}
+
+/* =Fieldset */
+.fieldset-title {
+  font-size: 1em;
+  letter-spacing: 1px;
+}
+
+fieldset {
+  background: none;
+  border: 1px solid #ccc;
+  margin: 1em 0 10px;
+  padding: 0 1em 10px;
+}
+
+fieldset .fieldset-wrapper {
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+.filter-wrapper {
+  padding: 1px 0 0;
+}
+
+.ie6 .vertical-tabs-panes {
+  float: left;
+}
+
+fieldset legend {
+  display: block; /* Fix disappearing legend in FFox */
+}
+
+html.js fieldset.collapsed {
+  background: transparent;
+  margin: 1em 0;
+  padding-top: 0;
+}
+
+fieldset ul.clear-block li {
+  background-image: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* =Quote */
+
+/* STANDARD QUOTES */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+q:before {
+  content: open-quote;
+}
+q:after {
+  content: close-quote;
+}
+
+/* SAFARI SUPPORT */
+q:before {
+  content: '\201C';
+}
+q:after {
+  content: '\201D';
+}
+q q:before {
+  content: '\2018';
+}
+q q:after {
+  content: '\2019';
+}
+
+/* =Blockquotes */
+blockquote {
+  margin: 0 0 0 2em;
+}
+blockquote *,
+q {
+  quotes: none;
+}
+
+/* =Cite, */
+blockquote {
+  border-left: 4px double #ccc;
+  padding: 0 0 0 2em;
+}
+blockquote p:before {
+  content: '“';
+  font-weight: bold;
+}
+blockquote p:after {
+  content: '”';
+  font-weight: bold;
+}
+
+/* =UI improvments. */
+.tabs li {
+  margin-left: 0;
+}
+.node-form .admin {
+  margin-bottom: 20px;
+}
+.tips {
+  font-size: 1em;
+}
+.book-navigation {
+  margin: 0 0 30px;
+}
+.book-navigation .menu {
+  border-top: none;
+  padding: 1em 0 0 3em;
+}
+.book-navigation .page-up {
+  background: url(../images/book-up.png) no-repeat left top;
+  height: 24px;
+  text-indent: -9999em;
+  width: 24px;
+}
+.book-navigation .page-up:hover {
+  background: url(../images/book-up-over.png) no-repeat left top;
+}
+.book-navigation .page-links {
+  background: url(../images/bg-shade-white-sml.png) repeat-x left bottom;
+  border-bottom: none;
+  border-top: none;
+}
+#forum tr td.forum {
+  background-position: 2px 6px;
+}
+.block ul {
+  padding: 0;
+}
+.block .item-list ul,
+.block ul.menu {
+  margin-bottom: 5px;
+}
+ul.menu {
+  padding-left: 1em;
+}
+
+.form-item {
+  padding: 0;
+}
+.form-item .description {
+  color: #666;
+  font-size: 1em;
+  line-height: 1.2em;
+  margin-top: 5px;
+}
+#upload-attachments .form-item .description {
+  bottom: 40px;
+}
+.ie6 #upload-attachments td .form-item {
+  width: 95%;
+}
+.ie6 #upload-attachments .form-item .description {
+  bottom: auto;
+}
+
+#edit-delete {
+  color: #ccc;
+}
+
+/* =Pager */
+ul.pager li.pager-current {
+  background-color: #005a8c;
+  border-radius: 2px;
+  color: #ffffff;
+  padding-bottom: 2px;
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-top: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+}
+
+.item-list .pager li {
+  margin: .25em 0 .25em 2px;
+  padding: 0px;
+}
+
+.item-list .pager li a {
+  background-color: #f4f4f4;;
+  border-radius: 2px;
+  padding-bottom: 2px;
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-top: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+}
+
+.item-list .pager li a:hover {
+  background-color: #005a8c;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* =Breadcrumb */
+.breadcrumb {
+  color: #b2b2a5;
+  padding-bottom: 1em;
+}
+
+/* =Core */
+
+
+/* =Modules */
+#user-login-form .item-list ul {
+  margin-left: 0;
+  padding: 1em 0 0;
+  text-align: left;
+}
+#user-login-form input {
+  width: 90%;
+}
+
+/* =Nodes */
+.submitted {
+  color: #999;
+  display: block;
+  margin-bottom: 1em;
+}
+
+.node-teaser,
+div.panel-pane div.node-teaser {
+  border-bottom: 1px solid #e6e6e6;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+#highlighted .content,
+.node .content {
+  font-size: 15px;
+  padding-bottom: 1em;
+}
+#highlighted .content {
+  padding-bottom: 0;
+}
+
+.block .content h3,
+.block .content h4,
+.block .content h5,
+.block .content h6 {
+  font-size: 15px;
+  line-height: 1;
+  margin-bottom: 5px;
+}
+.block .content h6 {
+  letter-spacing: 1px;
+}
+
+.node h1,
+.node h2,
+.node h3,
+.node h4,
+.node h5,
+.node h6 {
+  margin-bottom: 5px;
+}
+
+.block .node h1 {
+  font-size: 26px;
+}
+.block .node h2 {
+  font-size: 24px;
+}
+.block .node h3 {
+  font-size: 22px;
+}
+.block .node h4 {
+  font-size: 20px;
+}
+.block .node h5 {
+  font-size: 18px;
+}
+.blick .node h6 {
+  font-size: 16px;
+}
+
+#comment-form #edit-subject,
+.node-form .form-text {
+  width: 100%;
+}
+
+.ie7 #comment-form #edit-subject,
+.ie7 .node-form .form-text {
+  width: 99%;
+}
+
+.node .node-links {
+  margin-top: 10px;
+}
+
+.node .node-links ul.links li {
+  border-right: 1px solid #ccc;
+  margin-left: 2px;
+}
+
+.node .node-links ul.links li.first {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.node .node-links ul.links li.last {
+  border-right: none;
+}
+
+/* =Comments */
+#comments {
+  border-top: 4px double #e6e6e6;
+  padding-top: 10px;
+}
+
+#comments .title {
+  margin-bottom: 10px;
+}
+
+.comment-title {
+  font-family: 微軟正黑體, "儷黑 Pro", 新細明體, "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+.comment {
+  border-bottom: 1px solid #e6e6e6;
+  margin-bottom: 10px;
+  padding: 0 0 10px 10px;
+}
+
+#content .comment .content {
+  font-size: 15px;
+}
+
+.comment .links {
+  text-align: right;
+}
+.comment .links li {
+  border-right: 1px solid #ccc;
+  margin-left: 2px;
+}
+.comment .links li.last {
+  border-right: none;
+}
+
+/**
+ * Zebra-striping rows and columns
+ * http://csswizardry.com/2010/08/zebra-striping-rows-and-columns/
+ */
+/*
+tbody td:nth-of-type(odd),
+tbody tr:nth-of-type(odd),
+thead th:nth-of-type(odd) {
+  background:rgba(255,255,136,0.5);
+}
+*/
+
+/**
+ * =Start my styles.
+ */
+#page-outer-wrapper {
+  background-color: #fff;
+  border-top: 2px solid #3e3a39;
+}
+.limiter { /* Limited for #preface, #postscript, #page-footer */
+  width: 960px;
+}
+#main-content {
+  padding-bottom: 20px;
+}
+#branding {
+  min-height: 80px;
+}
+#header {
+  padding: 5px 0;
+}
+#logo-title {
+  float: left;
+  width: 50%;
+}
+#site-slogan,
+#site-name {
+  display: block;
+  line-height: 1;
+}
+#site-slogan {
+  margin-top: 10px;
+}
+#site-name {
+  font-size: 32px;
+  font-weight: 700;
+}
+#site-name a {
+  color: #777;
+}
+#site-name a:hover {
+  color: #999;
+  text-decoration: none;
+}
+#header-region {
+  float: right;
+  position: relative;
+  text-align: right;
+  width: 50%;
+}
+#header-region ul {
+  text-align: right;
+}
+#header-region li {
+  display: inline;
+}
+#postscript-wrapper {
+  background: #f2f0ce;
+  padding: 10px 0;
+}
+#page-footer-wrapper {
+  background: #3e3a39;
+}
+#page-footer {
+  height: 60px;
+  padding-top: 15px;
+}
+#page-footer *,
+#page-footer a {
+  color: #ccc;
+}
+.content-inner {
+  padding: 0 20px 0 0;
+}
+.no-sidebars .content-inner {
+  padding: 0;
+}
+
+.node-title,
+.title,
+.page-title {
+  font-family: 微軟正黑體, "儷黑 Pro", 新細明體, "Helvetica Neue", Arial, Helvetica, sans-serif;
+  line-height: 1.2;
+  margin-bottom: 0;
+}
+
+/* =Sidebar all */
+.sidebar .block {
+  border-bottom: 1px solid #e6e6e6;
+  margin-bottom: 10px;
+}
+
+.block-inner {
+  padding-bottom: 5px;
+}
+
+.block-title {
+  font-family: 微軟正黑體, "儷黑 Pro", 新細明體, "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  letter-spacing: 0;
+  margin-bottom: 5px;
+  padding: 0;
+}
+
+.not-titled .block-inner {
+  padding-top: 10px;
+}
+
+.block .content {
+  padding: 0;
+}
+
+/* =Navigation */
+.with-navigation #content,
+.with-navigation .sidebar {
+  margin-top: 10px;
+}
+
+#primary-menu {
+  background-color: #f2f0ce;
+  border-bottom: 5px double #bfbda3;
+  border-top: 2px solid #bfbda3;
+  font-family: 微軟正黑體, "儷黑 Pro", 新細明體, "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 35px;
+  list-style-type: none;
+  margin-bottom: 0;
+}
+#primary-menu li {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+#primary-menu a {
+  color: #777;
+  display: block;
+  float: left;
+  padding: 0 20px;
+}
+#primary-menu a:hover {
+  color: #000;
+  text-decoration: none;
+}
+#primary-menu .active-trail a {
+  background: #f6f8f5 url(images/bg-nav.png) repeat-x left center;
+  color: #000;
+}
+
+#secondary-menu {
+  border-bottom: 1px solid #e6e6e6;
+  height: 37px;
+  line-height: 37px;
+  margin: 0 auto 10px;
+  width: 960px;
+}
+#secondary-menu li {
+  display: inline;
+  margin-left: 20px;
+}
+#secondary-menu li a {
+  color: #777;
+}
+#secondary-menu .active-trail a,
+#secondary-menu li a.active,
+#secondary-menu li a:hover {
+  border-bottom: 3px solid #ccc;
+  color: #000;
+  text-decoration: none;
+}

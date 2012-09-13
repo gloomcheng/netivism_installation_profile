@@ -1,0 +1,35 @@
+name = NETivism
+description = Select this profile to install with commonly used features pre-configured by NETivism.
+version = VERSION
+core = 7.x
+; Core modules
+dependencies[] = block
+dependencies[] = comment
+dependencies[] = contextual
+dependencies[] = help
+dependencies[] = image
+dependencies[] = list
+dependencies[] = locale
+dependencies[] = menu
+dependencies[] = number
+dependencies[] = options
+dependencies[] = path
+dependencies[] = taxonomy
+dependencies[] = dblog
+dependencies[] = search
+dependencies[] = field_ui
+dependencies[] = file
+dependencies[] = rdf
+; Contributed modules
+dependencies[] = admin_menu
+dependencies[] = admin_menu_toolbar
+dependencies[] = better_formats
+dependencies[] = token
+dependencies[] = ctools
+dependencies[] = globalredirect
+dependencies[] = pathauto
+dependencies[] = views
+dependencies[] = views_ui
+dependencies[] = libraries
+dependencies[] = wysiwyg	
+

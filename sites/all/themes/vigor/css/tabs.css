@@ -1,0 +1,111 @@
+/* Tabs CSS
+ * --------
+ * Adds styles for the primary and secondary tabs.
+ *
+ * Compare this with default CSS found in the system module's stylesheet (a copy
+ * of which is in drupal5-reference.css, line 510.) */
+div.tabs {
+  margin: 0 0 5px 0;
+}
+
+ul.primary,
+ul.secondary {
+  width: 99%;
+}
+
+ul.primary {
+  background: url(../images/tabs/tab-bar.png) repeat-x left bottom;
+  border-width: 0;
+  line-height: normal;
+  list-style: none;
+  margin: 0;
+  padding: 0 0 0 10px;
+  white-space: nowrap;
+}
+ul.primary li {
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+ul.primary li.active a,
+ul.primary li.active a:hover {
+  background: url(../images/tabs/tab-left.png) no-repeat left 0;
+  background-color: transparent;
+  border-width: 0;
+  color: black;
+}
+ul.primary li.active a .tab,
+ul.primary li.active a:hover .tab {
+  background: url(../images/tabs/tab-right.png) no-repeat right 0;
+}
+ul.primary li a {
+  background: url(../images/tabs/tab-left.png) no-repeat left -38px;
+  background-color: transparent;
+  border-width: 0;
+  color: #777777;
+  display: block;
+  font-weight: bold;
+  height: 24px;
+  margin: 0;
+  padding: 0 0 0 5px;
+  text-decoration: none;
+}
+ul.primary li a:hover {
+  background: url(../images/tabs/tab-left.png) no-repeat left -76px;
+  background-color: transparent;
+  border-width: 0;
+}
+ul.primary li a:hover .tab {
+  background: url(../images/tabs/tab-right.png) no-repeat right -76px;
+  cursor: pointer;
+}
+ul.primary li a .tab {
+  background: url(../images/tabs/tab-right.png) no-repeat right -38px;
+  border-width: 0;
+  display: block;
+  height: 20px;
+  line-height: 20px;
+  margin: 0;
+  padding: 4px 13px 0 6px;
+}
+
+ul.secondary {
+  background: url(../images/tabs/tab-secondary-bg.png) repeat-x left bottom;
+  border-bottom: 1px solid silver;
+  list-style: none;
+  margin: 0;
+  padding: 0 0 0 5px;
+  white-space: nowrap;
+}
+ul.secondary li {
+  border-right: none;
+  float: left;
+  margin: 0 5px 0 0;
+  padding: 5px 0;
+}
+ul.secondary a {
+  background: url(../images/tabs/tab-secondary.png) repeat-x left -56px;
+  border: 1px solid silver;
+  color: #777777;
+  display: block;
+  height: 24px;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+ul.secondary a .active,
+.activeul.secondary a:hover {
+  background: url(../images/tabs/tab-secondary.png) repeat-x left top;
+  border: 1px solid silver;
+  color: black;
+}
+ul.secondary a:hover {
+  background: url(../images/tabs/tab-secondary.png) repeat-x left bottom;
+}
+ul.secondary a .tab {
+  display: block;
+  height: 18px;
+  line-height: 18px;
+  margin: 0;
+  padding: 3px 8px;
+}
