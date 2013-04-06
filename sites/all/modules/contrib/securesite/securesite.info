@@ -7,9 +7,9 @@ files[] = securesite.test
 files[] = securesite.inc
 
 
-; Information added by drupal.org packaging script on 2012-10-02
+; Information added by drupal.org packaging script on 2013-04-05
 version = "7.x-2.x-dev"
 core = "7.x"
 project = "securesite"
-datestamp = "1349139237"
+datestamp = "1365125574"
 

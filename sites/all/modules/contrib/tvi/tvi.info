@@ -5,11 +5,9 @@ core = 7.x
 dependencies[] = views
 dependencies[] = taxonomy
 
-files[] = includes/tvi.admin.inc
-files[] = includes/tvi.query.inc
-; Information added by drupal.org packaging script on 2012-11-16
-version = "7.x-1.0-alpha4"
+; Information added by drupal.org packaging script on 2013-03-11
+version = "7.x-1.0-beta3"
 core = "7.x"
 project = "tvi"
-datestamp = "1353084793"
+datestamp = "1363003213"
 

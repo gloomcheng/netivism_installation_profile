@@ -57,7 +57,7 @@ function _securesite_admin_help() {
   '    <p>' . t('You can use this field to name your log-in area. This is primarily used with HTTP Auth.') . '</p>' . "\n" .
   '  </li>' . "\n" .
   '  <li>' . t('Guest user name and password') . "\n" .
-  '    <p>' . t('If you give anonymous users the <em>!access</em> permission, you can set a user name and password for anonymous users. If not set, guests can use any name and password.', array('!access' => l(t('access secured pages'), 'admin/user/permissions', array('fragment' => 'module-securesite')))) . '</p>' . "\n" .
+  '    <p>' . t('If you give anonymous users the <em>!access</em> permission, you can set a user name and password for anonymous users. If not set, guests can use any name and password.', array('!access' => l(t('access secured pages'), 'admin/people/permissions', array('fragment' => 'module-securesite')))) . '</p>' . "\n" .
   '  </li>' . "\n" .
   '  <li>' . t('Customize HTML forms') . "\n" .
   '    <p>' . t('<em>Custom message for log-in form</em> and <em>Custom message for password reset form</em> are used in the HTML forms when they are displayed. If the latter box is empty, Secure Site will not offer to reset passwords. Please note, the log-in form is only displayed when the HTML log-in form authentication mode is used.') . '</p>' . "\n" .
@@ -136,7 +136,7 @@ function securesite_admin_settings() {
   $form['authentication'] = array(
     '#type' => 'fieldset',
     '#title' => t('Authentication'),
-    '#description' => t('Enable Secure Site below. Users must have the <em>!access</em> permission in order to access the site if authentication is forced.', array('!access' => l(t('access secured pages'), 'admin/user/permissions', array('fragment' => 'module-securesite'))))
+    '#description' => t('Enable Secure Site below. Users must have the <em>!access</em> permission in order to access the site if authentication is forced.', array('!access' => l(t('access secured pages'), 'admin/people/permissions', array('fragment' => 'module-securesite'))))
   );
   $form['authentication']['securesite_enabled'] = array(
     '#type' => 'radios',
@@ -191,7 +191,7 @@ function securesite_admin_settings() {
   $form['guest'] = array(
     '#type' => 'fieldset',
     '#title' => t('Guest access'),
-    '#description' => t('Guest access allows anonymous users to view secure pages, though they will still be prompted for a user name and password. If you give anonymous users the <em>!access</em> permission, you can set the user name and password for anonymous users below.', array('!access' => l(t('access secured pages'), 'admin/user/permissions', array('fragment' => 'module-securesite')))),
+    '#description' => t('Guest access allows anonymous users to view secure pages, though they will still be prompted for a user name and password. If you give anonymous users the <em>!access</em> permission, you can set the user name and password for anonymous users below.', array('!access' => l(t('access secured pages'), 'admin/people/permissions', array('fragment' => 'module-securesite')))),
   );
   $guest_access = !user_access('access secured pages', drupal_anonymous_user());
   $form['guest']['securesite_guest_name'] = array(

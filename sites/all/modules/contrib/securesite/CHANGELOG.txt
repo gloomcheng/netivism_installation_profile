@@ -8,4 +8,6 @@ Secure Site 7.x-2.x, xxxx-xx-xx
 #1011890 by Deciphered: Additional Drupal 7 port issues.
 #1011890 by jonathan_hunt: Fixed issue with http header.
 by Deciphered: Fixed coder issues.
+by Deciphered: Fixed permission links.
+by Deciphered: Added Variable module integration.
 by Sime: Initial Drupal 7 port.

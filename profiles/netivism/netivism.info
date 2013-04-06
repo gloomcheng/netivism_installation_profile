@@ -31,5 +31,5 @@ dependencies[] = pathauto
 dependencies[] = views
 dependencies[] = views_ui
 dependencies[] = libraries
-dependencies[] = wysiwyg	
+dependencies[] = ckeditor	
 

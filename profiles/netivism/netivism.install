@@ -69,7 +69,7 @@ function netivism_install() {
   filter_format_save($full_html_format);
 
   // CKEditor configuration.
- $filtered_html_wysiwyg = array(
+ $filtered_html_ckeditor = array(
   'default' => 1,
   'user_choose' => 0,
   'show_toggle' => 1,
@@ -150,14 +150,14 @@ function netivism_install() {
   'css_classes' => '',
 );
 
-  $wysiwyg = db_insert('wysiwyg')->fields(array(
+  $ckeditor = db_insert('ckeditor')->fields(array(
     'format' => 'filtered_html',
     'editor' => 'ckeditor',
-    'settings' => serialize($filtered_html_wysiwyg),
+    'settings' => serialize($filtered_html_ckeditor),
   ))
   ->execute();
 
- $full_html_wysiwyg = array(
+ $full_html_ckeditor = array(
   'default' => 1,
   'user_choose' => 0,
   'show_toggle' => 1,
@@ -238,10 +238,10 @@ function netivism_install() {
   'css_classes' => '',
 );
 
-  $wysiwyg = db_insert('wysiwyg')->fields(array(
+  $ckeditor = db_insert('ckeditor')->fields(array(
     'format' => 'full_html',
     'editor' => 'ckeditor',
-    'settings' => serialize($full_html_wysiwyg),
+    'settings' => serialize($full_html_ckeditor),
   ))
   ->execute();
   
